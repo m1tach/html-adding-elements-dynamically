@@ -10,6 +10,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    
+    <div class="main">
+      <div class="emoji mb-6">💣🤯💥</div>
+      <button class="button">Boom?</button>
+    </div>
+
+    <script>
+      document.body.addEventListener("click", () => {
+        for (let i = 0; i < 5; i++) {
+          let article = document.createElement('article');
+          article.classList.add('message');
+          article.textContent = "some text";
+          document.body.appendChild(article);
+        }
+      });
+    </script>
   </body>
 </html>
